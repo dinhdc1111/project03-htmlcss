@@ -27,17 +27,32 @@ a {
     text-decoration: none;
 }
 
-/* Header */
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn {
+    --height-button: 60px;
+    display: inline-block;
+    height: var(--height-button);
+    line-height: var(--height-button);
+    border-radius: 99px;
+    min-width: 205px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
 }
 
+/* Header */
 .header {
     padding-top: 30px;
     min-height: 100vh;
     background-color: var(--background-color);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -88,11 +103,11 @@ a {
 
 .menu__list {
     display: flex;
-    gap: 42px;
 }
 
 .menu__link {
     color: #C9D2DA;
+    padding: 4px 21px;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
@@ -131,11 +146,8 @@ a {
 }
 
 .group-button__signup {
-    color: #FFF;
-    font-weight: 400;
-    padding: 8px 20px;
-    background-color: var(--primary-color);
-    border-radius: 22px;
+    --height-button: 44px;
+    min-width: 104px;
 }
 
 .group-button__signup:hover {
