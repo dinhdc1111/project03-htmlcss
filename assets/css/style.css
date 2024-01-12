@@ -385,3 +385,47 @@ a {
     color: #2E80CE;
     cursor: pointer;
 }
+
+/* Feature */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature__images {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.feature__photo {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__photo:first-child {
+    width: 570px;
+    height: 370px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__photo:last-child {
+    position: absolute;
+    bottom: 0;
+    right: -58px;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__action {
+    width: 40%;
+}
+
+.feature__desc {
+    margin-bottom: 38px;
+}
