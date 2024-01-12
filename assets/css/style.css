@@ -429,3 +429,96 @@ a {
 .feature__desc {
     margin-bottom: 38px;
 }
+
+/* Doctors */
+.doctors {
+    padding: 85px 0;
+}
+
+.header__doctors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-meet {
+    margin-top: 38px;
+}
+
+.doctors__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.doctor {
+    text-align: center;
+}
+
+.doctor:hover .doctor__avatar {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+
+.doctor__avatar-bg {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #EAF6FF;
+    overflow: hidden;
+}
+
+.doctor__avatar {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.doctor__name {
+    margin-top: 12px;
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.doctor__worksplace {
+    color: #575F66;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.85;
+}
+
+.cta-group {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    outline: none;
+    color: #575F66;
+    background: #fff;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.member__control-next-icon {
+    rotate: 180deg;
+}
